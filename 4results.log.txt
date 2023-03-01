@@ -1,9 +1,6 @@
 --------------------------------------------------------------------------------------------------
-      name:  <Mamudat Jaji>
-       log:  C:\Users\mamud\OneDrive\Documents\Chapter 4\4results.log
-  log type:  text
- opened on:   1 Jan 2000, 00:00:43
-
+      name:  <Leke>
+       
 . do "C:\Users\mamud\OneDrive\Documents\Chapter 4\4-3.do"
 
 . * Question 3*
