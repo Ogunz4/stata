@@ -1,0 +1,7 @@
+label variable id "Respondent identification"
+label variable gender "Participant's gender"
+label variable education "Years of education"
+label variable schxst "Rating of schools in your state"
+label variable schxcom "Rating of schools in your community of origin"
+label variable prison "Ratings of prison sentences"
+label variable conserv "Conservatism/liberalism"
