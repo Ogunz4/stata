@@ -1,5 +1,4 @@
-# World Bank GitHub Stata repository
+# GitHub Stata repository
 
 ## Description
-
-Visit the [landing page](http://worldbank.github.io/stata/).
+projects on data analysis
