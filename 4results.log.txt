@@ -1,0 +1,73 @@
+--------------------------------------------------------------------------------------------------
+      name:  <Mamudat Jaji>
+       log:  C:\Users\mamud\OneDrive\Documents\Chapter 4\4results.log
+  log type:  text
+ opened on:   1 Jan 2000, 00:00:43
+
+. do "C:\Users\mamud\OneDrive\Documents\Chapter 4\4-3.do"
+
+. * Question 3*
+.  
+.  * This command opens the dataset firstsurvey_chapter4
+.  use firstsurvey_chapter4.dta
+
+.  
+.  * This command describes the dataset firstsurvey_chapter4
+.  describe
+
+Contains data from firstsurvey_chapter4.dta
+  obs:            20                          
+ vars:             7                          9 Feb 2016 12:10
+--------------------------------------------------------------------------------------------------
+              storage   display    value
+variable name   type    format     label      variable label
+--------------------------------------------------------------------------------------------------
+id              int     %8.0g                 Identification number
+gender          byte    %8.0g      sex        1 if male 2 if female
+education       byte    %8.0g                 Years of education
+sch_st          byte    %9.0g      approve    Rating of schools in your state
+sch_com         byte    %9.0g      approve    Ratings of schools in your community of origin
+prison          byte    %16.0g     length     Rating of prison sentences
+conserv         byte    %17.0g     con        Conservativism/liberalism
+--------------------------------------------------------------------------------------------------
+Sorted by: 
+
+.  
+.  * This command summarizes the dataset firstsurvey_chapter4
+.  summarize
+
+    Variable |        Obs        Mean    Std. Dev.       Min        Max
+-------------+---------------------------------------------------------
+          id |         20        10.5     5.91608          1         20
+      gender |         20         1.5    .5129892          1          2
+   education |         20       14.45    2.946452          8         20
+      sch_st |         18    3.444444    1.149026          2          5
+     sch_com |         20         3.5    1.395481          1          5
+-------------+---------------------------------------------------------
+      prison |         17    3.176471    1.550617          1          5
+     conserv |         19    2.947368    1.544657          1          5
+
+.  
+.  * This command summarizes the variable education with details
+.  summarize education, detail
+
+                     Years of education
+-------------------------------------------------------------
+      Percentiles      Smallest
+ 1%            8              8
+ 5%          9.5             11
+10%         11.5             12       Obs                  20
+25%           12             12       Sum of Wgt.          20
+
+50%         14.5                      Mean              14.45
+                        Largest       Std. Dev.      2.946452
+75%         16.5             17
+90%           18             18       Variance       8.681579
+95%           19             18       Skewness      -.1636124
+99%           20             20       Kurtosis       2.522208
+
+.  * The median score for education is 14.5 and it is the 50th percentile
+. 
+end of do-file
+
+. exit, clear
